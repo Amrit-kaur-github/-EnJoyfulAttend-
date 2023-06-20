@@ -1,0 +1,37 @@
+ self.var_dep=StringVar()
+        self.var_course=StringVar()
+        self.var_year=StringVar()
+        self.var_semester=StringVar()
+        self.var_std_id=StringVar()
+        self.var_std_name=StringVar()
+        self.var_div=StringVar()
+        self.var_roll=StringVar()
+        self.var_gender=StringVar()
+        self.var_dob=StringVar()
+        self.var_email=StringVar()
+        self.var_phone=StringVar()
+        self.var_address=StringVar()
+        self.var_teacher=StringVar()
+
+
+        self.student_table.heading("dep",text ="Department")
+        self.student_table.heading("course",text ="Course")
+        self.student_table.heading("year",text ="Year")
+        self.student_table.heading("sem",text ="Semester")
+        self.student_table.heading("id",text ="StudentId")
+        self.student_table.heading("name",text ="Name")
+        self.student_table.heading("div",text ="Division")
+        self.student_table.heading("roll",text ="Roll no")
+        self.student_table.heading("gender",text ="Gender")
+        self.student_table.heading("dob",text ="DOB")
+        self.student_table.heading("email",text ="Email")
+        self.student_table.heading("phone",text ="Phone")
+        self.student_table.heading("address",text ="Address")
+        self.student_table.heading("teacher",text ="Teacher")
+        self.student_table.heading("photo",text ="PhotoSampleStatus")
+        self.student_table["show"]="headings"
+
+
+        my_cursor.execute("update student set dep=%s,course=%s, year=%s, sem=%s,div=%s,name=%s,Roll no=%s,gender=%s,dob=%s,email=%s, phone=%s, address=%s,teacher=%s,PhotoSampleStatus=%s where StudentId=%s)",
+        #("dep","course","year","sem","id","div","name","roll","gender","dob","email","phone","address","teacher","photo"),xscrollcommand=scroll_x.set,yscrollcommand=scroll_y.set
+        
